@@ -1,0 +1,608 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+        integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/font/fontawesome-free-5.15.4-web/css/all.css">
+    <title>BossBuy</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+    </script>
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <div class="grid wide">
+                <nav class="header__navbar hide-on-mobile-tablet">
+                    <ul class="header__navbar-list">
+                        <li
+                            class="header__navbar-items header__navbar-items--separator header__navbar-items--appear_qr">
+                            Vào cửa hàng trên ứng dụng
+                            <div class="header__qr">
+                                <img src="./assets/img/qrcode.png" alt="QR code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-download-link"><img src="./assets/img/ios.png" alt=""
+                                            class="header__qr-download"></a>
+                                    <a href="" class="header__qr-download-link"><img src="./assets/img/android.png"
+                                            alt="" class="header__qr-download"></a>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-items">
+                            <span class="header__navbar-title--connection"> Kết nối</span>
+                            <a href="" class="header__navbar-icon"><i
+                                    class="header__navbar-i fab fa-facebook-square"></i></a>
+                            <a href="" class="header__navbar-icon"><i class="header__navbar-i fab fa-instagram"></i></a>
+
+                        </li>
+                        <!-- <li class="header__navbar-items"></li> -->
+                    </ul>
+
+                    <ul class="header__navbar-list">
+                        <li class="header__navbar-items header__navbar-items--appear_notify">
+                            <a href="" class="header__navbar-items-notifi">
+                                <i class="header__navbar-i fas fa-bell"></i>
+                                Thông báo</a>
+                            <div class="header__notify">
+                                <header class="header__notify-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <!-- <ul class="header__notify-list">
+                                    <li class="header__notify-item .header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/hop-tom-kho-344_thumb_240x180.jpg" alt=""
+                                                class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Tôm khô Cà Mau</span>
+                                                <span class="header__notify-description">Tôm khô Cà Mau - Làm từ tôm đất
+                                                    - Làm thủ công</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notify-item .header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/tom-the-xe-379_thumb_240x180.jpg" alt=""
+                                                class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Tôm khô xẻ</span>
+                                                <span class="header__notify-description">Tôm khô xẻ (tôm lụi Cà Mau),
+                                                    Tôm thẻ tự nhiên</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notify-item .header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/kho-ca-thoi-loi-266_thumb_240x180.jpg" alt=""
+                                                class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Tôm cá thòi lòi</span>
+                                                <span class="header__notify-description">Đặc sản khô cá thòi lòi (cá leo
+                                                    cây) Cà Mau</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__notify-item .header__notify-item--viewed">
+                                        <a href="" class="header__notify-link">
+                                            <img src="./assets/img/cha-tom-ca-mau-2-518_thumb_240x180.jpg" alt=""
+                                                class="header__notify-img">
+                                            <div class="header__notify-info">
+                                                <span class="header__notify-name">Chả tôm Cà Mau</span>
+                                                <span class="header__notify-description">Chả tôm Cà Mau, thơm ngon, dai,
+                                                    đậm vị tôm tươi</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                </ul> -->
+                                <div class="header__notify-footer">
+                                    <a href="" class="header__notify-footer-btn">
+                                        Xem tất cả
+                                    </a>
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="header__navbar-items">
+                            <a href="" class="header__navbar-items-help">
+                                <i class="header__navbar-i fas fa-question-circle"></i>
+                                Trợ giúp
+                            </a>
+                        </li>
+
+                        <li class="header__navbar-items header__navbar-user">
+                            <img src="./assets/img/avatar.jpg" alt="" class="header__navbar-user-img">
+                            <span class="header__navbar-user-name">Chí Nguyên</span>
+
+                            <ul class="header__navbar-user-menu">
+                                <li class="header__navbar-user-item"><a class="header__navbar-user-item-choice_0"
+                                        href="">Tài khoản của tôi</a></li>
+                                <li class="header__navbar-user-item"><a class="header__navbar-user-item-choice_1"
+                                        href="">Địa chỉ của tôi</a></li>
+                                <li class="header__navbar-user-item"><a class="header__navbar-user-item-choice_2"
+                                        href="">Đơn mua</a></li>
+                                <li class="header__navbar-user-item"><a class="header__navbar-user-item-choice_3"
+                                        href="">Đăng xuất</a></li>
+                            </ul>
+                        </li>
+
+                    </ul>
+                </nav>
+
+                <div class="header-with-search">
+                    <label for="sub-mobile-category-checkbox" class="sub-mobile-category__heading-icon hide-on-tablet">
+                        <i class="sub-mobile-category-icon fas fa-bars"></i>
+                    </label>
+                    <input type="checkbox" hidden name="" id="sub-mobile-category-checkbox"
+                        class="header-mobile-category-checkbox">
+                    <label for="sub-mobile-category-checkbox" class="overlay_mobile_sub"></label>
+
+
+                    <nav class="sub-mobile-category">
+                        <ul class="sub-mobile-category-list">
+                        </ul>
+                    </nav>
+
+                    <label for="mobile-search-checkbox" class="header__mobile-search hide-on-tablet">
+                        <i class="header-with-search-logo fas fa-search"></i>
+                    </label>
+
+                    <input type="checkbox" hidden name="" id="mobile-search-checkbox" class="header__search-checkbox">
+                    <label for="mobile-search-checkbox" class="overlay_mobile"></label>
+                    <div class="header__logo">
+                        <a href="#" class="header__logo-link">
+                            <img src="./assets/img/logoBossBuy.png" alt="" class="header__logo-img">
+                        </a>
+                        <span class="header__logo-Text hide-on-mobile-tablet">BossBuy</span>
+                    </div>
+                    <div class="header__search ">
+
+                        <div class="header__search-input-wrap">
+                            <input type="text" class="header__search-input" placeholder="Nhập tên sản phẩm">
+                            <div class="header__search-history">
+                                <h3 class="header__search-history-heading">Lịch sử tìm kiếm</h3>
+                                <ul class="header__search-history-list">
+                                    <li class="header__search-item">
+                                        <a href="">Udemy</a>
+                                    </li>
+                                    <li class="header__search-item">
+                                        <a href="">Python</a>
+                                    </li>
+                                    <li class="header__search-item">
+                                        <a href="">Flutter</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="header__search-selection">
+                            <span class="header__search-selection-lable">Trong shop</span>
+                            <i class="header__search-selection-icon fas fa-chevron-down"></i>
+                            <ul class="header__search-option">
+                                <li class="header__search-option-item">
+                                    <span>Trong shop</span>
+                                    <i class="header__search-option-icon fas fa-check"></i>
+                                </li>
+
+                                <li class="header__search-option-item">
+                                    <span>Ngoài shop</span>
+                                    <!-- <i class="header__search-option-icon fas fa-check"></i> -->
+                                </li>
+                            </ul>
+                        </div>
+
+                        <button class="header__search-selection-btn">
+                            <i class="header__search-icon fas fa-search"></i>
+                        </button>
+
+
+
+                    </div>
+
+                    <!-- <div class="header__cart">
+                        
+                        <div class="header__cart-icon--appear">
+
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <span class="header__cart-notifyquantity">3</span>
+                            <div class="header__cart-list ">
+                                <img src="./assets/img/empty-cart.png" alt="" class="header__cart-list--nocart-img">
+
+
+                                <h4 class="header__cart-heading">Sản phẩm đã thêm</h4>
+                                <ul class="header__cart-list-item">
+
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/hop-tom-kho-344_thumb_240x180.jpg" alt=""
+                                            class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Tôm khô Cà Mau</h5>
+                                                <div class="header__cart-item-price-warp">
+                                                    <span class="header__cart-item-price">1.200.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+
+                                                </div>
+
+                                            </div>
+
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Phân loại: 0.5kg
+                                                </span>
+                                                <span class="header__cart-item-delete">
+                                                    Xóa
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/cha-tom-ca-mau-2-518_thumb_240x180.jpg" alt=""
+                                            class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Chả tôm Cà Mau</h5>
+                                                <div class="header__cart-item-price-warp">
+
+                                                    <span class="header__cart-item-price">200.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">2</span>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Phân loại: 0.5kg
+                                                </span>
+                                                <span class="header__cart-item-delete">
+                                                    Xóa
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/mam-tep-ca-mau-tron-du-du-877_thumb_240x180.jpg" alt=""
+                                            class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Mắm tôm Cà Mau</h5>
+                                                <div class="header__cart-item-price-warp">
+
+                                                    <span class="header__cart-item-price">200.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">3</span>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Phân loại: 0.5kg
+                                                </span>
+                                                <span class="header__cart-item-delete">
+                                                    Xóa
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+
+                                    <li class="header__cart-item">
+                                        <img src="./assets/img/mam-tep-ca-mau-tron-du-du-877_thumb_240x180.jpg" alt=""
+                                            class="header__cart-img">
+                                        <div class="header__cart-item-info">
+                                            <div class="header__cart-item-head">
+                                                <h5 class="header__cart-item-name">Mắm tôm Cà Mau </h5>
+                                                <div class="header__cart-item-price-warp">
+
+                                                    <span class="header__cart-item-price">200.000đ</span>
+                                                    <span class="header__cart-item-multiply">x</span>
+                                                    <span class="header__cart-item-quantity">3</span>
+
+                                                </div>
+                                            </div>
+
+                                            <div class="header__cart-item-body">
+                                                <span class="header__cart-item-description">
+                                                    Phân loại: 0.5kg
+                                                </span>
+                                                <span class="header__cart-item-delete">
+                                                    Xóa
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+
+                                <a href="#" class="header-cart-view btn btn--primary ">Xem giỏ hàng</a>
+
+                            </div>
+                        </div>
+
+                    </div> -->
+
+                    <label for="sub-mobile-login-checkbox" class="mobile__navbar-items mobile__navbar-user">
+                        <img src="./assets/img/avatar.jpg" alt="" class="mobile__navbar-user-img">
+                    </label>
+                    <input type="checkbox" hidden name="" id="sub-mobile-login-checkbox"
+                        class="header-mobile-login-checkbox">
+                    <label for="sub-mobile-login-checkbox" class="overlay_mobile_login"></label>
+                    <nav class="mobile__navbar-user-menu-sub">
+                        <ul class="mobile__navbar-user-menu">
+                            <li class="mobile__navbar-user-item"><a class="mobile__navbar-user-item-choice_0"
+                                    href="">Tài khoản của tôi</a></li>
+                            <li class="mobile__navbar-user-item"><a class="mobile__navbar-user-item-choice_1"
+                                    href="">Địa chỉ của tôi</a></li>
+                            <li class="mobile__navbar-user-item"><a class="mobile__navbar-user-item-choice_2"
+                                    href="">Đơn mua</a></li>
+                            <li class="mobile__navbar-user-item"><a class="header__navbar-user-item-choice_3"
+                                    href="">Đăng xuất</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+            <ul class="header__sort-bar">
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Liên quan</a>
+                </li>
+                <li class="header__sort-item header__sort-item--active">
+                    <a href="" class="header__sort-link">Mới nhất</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Bán chạy</a>
+                </li>
+                <li class="header__sort-item">
+                    <a href="" class="header__sort-link">Giá
+                        <div class="header__sort-icon-layout">
+                            <!-- <i class="header__sort-icon fas fa-chevron-up"></i> -->
+                            <!-- <i class="header__sort-icon fas fa-chevron-down"></i> -->
+
+                        </div>
+
+
+                    </a>
+
+
+                </li>
+            </ul>
+        </header>
+
+        <div class="container">
+            <div class="grid wide">
+                <div class="row sm-gutter app_content">
+                    <div class="col l-2 m-0 c-0">
+                        <nav class="category">
+                            <h3 class="category__heading">
+                                <i class="category__heading-icon fas fa-list-ul"></i>
+                                Danh mục
+                            </h3>
+                            <ul class="category-list">
+                            
+                            </ul>
+                        </nav>
+                    </div>
+
+                    <div class="col l-10 m-12 c-12">
+                        <div class="home-filter hide-on-mobile-tablet">
+                            <span class="home-filter__lable">Sắp xếp theo</span>
+                            <button class="home-filter__btn btn btn--secondary">Phổ biến</button>
+                            <button class="home-filter__btn btn btn--primary">Mới nhất</button>
+                            <button class="home-filter__btn btn btn--secondary">Bán chạy</button>
+                            <div class="select-input">
+                                <span class="select-input-lable">Giá</span>
+                                <i class="select-input-icon fas fa-chevron-down"></i>
+                                <ul class="select-input-option-list">
+                                    <li class="select-input-option-item">
+                                        <a href="" class="select-input-option-item-link">Giá thấp đến cao</a>
+                                        <!-- <i class="select-input-option-icon fas fa-check"></i> -->
+                                    </li>
+
+                                    <li class="select-input-option-item">
+                                        <a href="" class="select-input-option-item-link">Giá cao đến thấp</a>
+
+                                    </li>
+                                </ul>
+
+                            </div>
+                            <div class="home-filter__page">
+                                <span class="home-filter__page-num">
+                                    <span class="home-filter__page-current">1</span>/14
+                                </span>
+
+                                <div class="home-filter__page-control">
+                                    <a href="" class="home-filter__page-btn home-filter__page-btn--disable">
+                                        <i class="home-filter__page-icon fas fa-chevron-left"></i>
+                                    </a>
+
+                                    <a href="" class="home-filter__page-btn">
+                                        <i class="home-filter__page-icon fas fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <nav class="mobile-category">
+                            <ul class="mobile-category-list">
+                                
+                                
+                            </ul>
+                        </nav>
+
+                        <div class="home-product">
+                            <div class="list-product row sm-gutter">
+                                
+
+
+
+                                
+                            </div>
+
+                        </div>
+
+
+                        <ul class="pagination">
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item-link">
+                                    <i class="pagination-item__icon fas fa-chevron-left"></i>
+                                </a>
+                            </li>
+
+                            <li class="pagination-item pagination-item--active">
+                                <a href="" class="pagination-item-link">1</a>
+                            </li>
+
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item-link">2</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item-link">3</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item-link">4</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item-link">5</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item-link">...</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item-link">14</a>
+                            </li>
+                            <li class="pagination-item">
+                                <a href="" class="pagination-item-link">
+                                    <i class="pagination-item__icon fas fa-chevron-right"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <footer class="footer">
+            <div class="grid wide">
+                <div class="row">
+                    <div class="col l-2-4 m-4 c-6 ">
+                        <h3 class="footer__heading">Chăm sóc khách hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Trung Tâm Trợ Giúp</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">BossBuy</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Hướng dẫn mua hàng</a>
+                            </li>
+                        </ul>
+
+                    </div>
+
+                    <div class="col l-2-4 m-4 c-6 ">
+                        <h3 class="footer__heading">Về BossBuy</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Giới thiệu về BossBuy</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Tuyển dụng</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Điều khoản</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-4 c-6 ">
+                        <h3 class="footer__heading">Chính sách mua hàng</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Hỗ trợ thanh toán</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link">Chính sách giao hàng</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                    <div class="col l-2-4 m-4 c-6 ">
+                        <h3 class="footer__heading">Theo dõi chúng tôi trên</h3>
+                        <ul class="footer-list">
+                            <li class="footer-item">
+
+                                <a href="https://www.facebook.com/bossbuyio?locale=vi_VN" class="footer-item__link"><i
+                                        class="footer-item-icon fab fa-facebook-square"></i>Facebook</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link"><i
+                                        class="footer-item-icon fab fa-instagram"></i>Instagram</a>
+                            </li>
+                            <li class="footer-item">
+                                <a href="" class="footer-item__link"><i
+                                        class="footer-item-icon fab fa-linkedin"></i>Linkedin</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col l-2-4 m-8 c-12 ">
+                        <h3 class="footer__heading">Vào cửa hành trên ứng dụng</h3>
+                        <div class="footer__download">
+                            <img src="./assets/img/qrcode.png" alt="QR code" class="footer__download-qr">
+
+                            <div class="footer__download-app">
+                                <a href="" class="footer__download-app-img-link"><img src="./assets/img/ios.png" alt=""
+                                        class="footer__download-app-img"></a>
+                                <a href="" class="footer__download-app-img-link"><img src="./assets/img/android.png"
+                                        alt="" class="footer__download-app-img"></a>
+                                <a href="" class="footer__download-app-img-link"><img
+                                        src="./assets/img/1ae215920a31f2fc75b00d4ee9ae8551.png" alt=""
+                                        class="footer__download-app-img"></a>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+    </div>
+
+    <div class="footer_bottom">
+        <div class="grid wide">
+
+            <p class="footer-test footer-test-cty ">Công Ty TNHH CN</p>
+            <p class="footer-test">Địa chỉ: 115 Viên An, Ngọc Hiển, Cà Mau, Việt Nam. Tổng đài hỗ trợ: 0815222263 -
+                Email: nt85272@gmail.com</p>
+            <p class="footer-test">© 2022 - Bản quyền thuộc về Công Ty TNHH CN</p>
+
+        </div>
+    </div>
+
+    </footer>
+    </div>
+
+    <script type="module" src="./app.js">
+    </script>
+</body>
+
+</html>
